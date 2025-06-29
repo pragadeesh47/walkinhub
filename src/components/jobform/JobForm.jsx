@@ -25,12 +25,13 @@ const JobForm = () => {
   const noteText = `<p class="note">Note: The walk-in details are not verified. Please confirm the information directly with the company before attending.</p>`;
   const navigate = useNavigate();
 
-  const [base64Image, setBase64Image] = useState('');
-  const [binaryImage, setBinaryImage] = useState('');
+const [base64Image, setBase64Image] = useState('');
+  const [binaryImage, setBinaryImage] = useState("");
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     if (file) {
+
       const reader = new FileReader();
 
       reader.onload = (e) => {
@@ -39,8 +40,10 @@ const JobForm = () => {
         const base64String = result.split(',')[1];
         setBase64Image(base64String);
 
+
         // Decode base64 to binary
         const binaryString = atob(base64String);
+        setLogoFile(file);
         setBinaryImage(binaryString);
       };
 
@@ -105,7 +108,7 @@ const JobForm = () => {
           {
             company_name: companyName,
             role,
-            logo_url: JSON.stringify(binaryImage),
+            logo_url: logoFile ? JSON.stringify(binaryImage) : logoFile,
             job_type: jobType,
             walkin_date_from: walkinDateFrom,
             walkin_date_to: walkinTo,

@@ -1,0 +1,21 @@
+.no-walkins-container {
+    text-align: center;
+    padding: 60px 20px;
+    color: #555;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .no-walkins-container h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: #333;
+  }
+  
+  .no-walkins-container p {
+    font-size: 16px;
+    color: #777;
+  }
+  

@@ -8,6 +8,7 @@ const JobCard = ({ job }) => {
   const areDatesEqual = (date1, date2) => {
     return new Date(date1).getTime() === new Date(date2).getTime();
   };
+  console.log(job.logo_url)
 
   const BinaryToImage = (profile) => {
     // Convert binary data back to base64

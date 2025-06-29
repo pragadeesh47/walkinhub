@@ -42,7 +42,7 @@ const JobDetail = () => {
   }, [id]);
 
   if (loading) return <Loader />;
-  if (!job) return <NotFound/>;
+  if (!job) return <NotFound />;
 
   return (
     <div className="job-card" style={{ maxWidth: '700px' }}>
@@ -55,6 +55,7 @@ const JobDetail = () => {
       <div className="card-header">
         {job.logo_url ? (
           <img src={`data:image/png;base64,${BinaryToImage(job.logo_url)}`} alt={`${job.company_name} logo`} className="company-logo" />
+
         ) : (
           <div className="logo-placeholder">{job.company_name.charAt(0)}</div>
         )}
