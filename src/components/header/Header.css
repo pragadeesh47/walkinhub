@@ -73,6 +73,14 @@
   border-radius: 4px;
 }
 
+.app-icon{
+  width: 44px;
+}
+
+.app-logo-container{
+  display: flex;
+  align-items: center;
+}
 
 @media screen and (max-width:540px) {
   .logo {

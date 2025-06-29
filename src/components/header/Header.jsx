@@ -6,6 +6,7 @@ import { FaSignOutAlt } from 'react-icons/fa';
 import { signOut } from 'firebase/auth';
 import { auth } from '../../utils/firebase';
 import { toast } from 'react-toastify';
+import Icon from "../../assets/businessman.png"
 
 const authLinks = ['/login', '/signup'];
 
@@ -50,9 +51,12 @@ const Header = () => {
   return (
     <header className="app-header">
       <div className="header-content">
+        <div className='app-logo-container'>
+        <img className='app-icon' src={Icon}/>
         <Link to="/" className="logo">
           Walkin<span>Hub</span>
         </Link>
+        </div>
         <div className="header-right">
           {/* Only render link if linkValue is not empty */}
           {(

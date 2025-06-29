@@ -4,6 +4,9 @@ import { supabase } from '../../utils/supabaseClient'; // import your client
 import './JobCard.css'; // reuse the same styling
 import { FaMapMarkerAlt, FaRegCalendarAlt, FaUserTie, FaLaptopCode } from 'react-icons/fa';
 import Loader from '../loader/Loader';
+import { toast } from 'react-toastify';
+import NotFound from '../not-found/NotFound';
+
 
 const JobDetail = () => {
   const { id } = useParams();
@@ -39,7 +42,7 @@ const JobDetail = () => {
   }, [id]);
 
   if (loading) return <Loader />;
-  if (!job) return <p>Job not found.</p>;
+  if (!job) return <NotFound/>;
 
   return (
     <div className="job-card" style={{ maxWidth: '700px' }}>

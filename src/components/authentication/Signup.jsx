@@ -85,6 +85,9 @@ const Signup = () => {
             Login
           </Link>
         </div>
+        <div className="signup-footer">
+          <Link to="/" className="signup-link">Go Home</Link>
+        </div>
       </div>
     </div>
   );
