@@ -1,0 +1,102 @@
+.job-form-container {
+  width: 100%;
+  margin: auto;
+  padding: 30px 40px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.note {
+  margin-bottom: 16px;
+  font: 24px;
+  color: #c00;
+  font-style: italic;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 15px;
+}
+
+input,
+select,
+button,
+.tox-tinymce {
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1.8px solid #ddd;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+  outline-offset: 3px;
+}
+
+input:focus,
+select:focus,
+.tox-tinymce:focus-within {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+input[type="file"] {
+  padding: 5px 0;
+}
+
+.form-submit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-top: 10px;
+  padding: 14px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgb(0 123 255 / 0.3);
+  user-select: none;
+}
+
+.form-submit-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 15px rgb(0 86 179 / 0.5);
+}
+
+.tox-tinymce {
+  border-radius: 6px !important;
+  border: 1.8px solid #ddd !important;
+  min-height: 200px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .job-form-container {
+    padding: 20px 25px;
+  }
+
+  button {
+    padding: 16px 0;
+  }
+}
+
+.job-form-container .required {
+  color: red;
+  margin: 2px;
+}

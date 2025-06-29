@@ -1,0 +1,5 @@
+.job-list-container {
+  padding: 20px 12px;
+  justify-content: center;
+  /* center grid items if space left */
+}

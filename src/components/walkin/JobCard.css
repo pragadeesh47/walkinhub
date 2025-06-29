@@ -1,0 +1,123 @@
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.company-logo,
+.logo-placeholder {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: contain;
+  /* background-color: #ddd; */
+}
+
+.logo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  background-color: #ccd6f6;
+}
+
+.company-info {
+  margin-left: 8px;
+}
+
+.company-name {
+  text-align: left;
+  margin: 0;
+  font-size: 0.88rem;
+  color: #666;
+}
+
+.job-role {
+  margin: 2px 0 0;
+  font-size: 1rem;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.job-type {
+  font-size: 0.80rem;
+  font-weight: 500;
+  color: #999;
+  margin-left: 6px;
+}
+
+
+.job-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.job-details li {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  font-size: 0.84rem;
+  color: #333;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  cursor: default;
+  transition: background-color 0.2s ease;
+}
+
+.job-details li:hover {
+  background-color: #eaeaea;
+}
+
+.job-details li svg {
+  margin-right: 8px;
+  color: #0077cc;
+}
+
+.back-btn {
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: #f2f2f2;
+}
+
+
+.job-card {
+  background: #fff;
+  border-radius: 6px;
+  margin: 12px 0;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.jc:hover {
+  transform: scale(1.015);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.job-card {
+  width: 100%;
+}

@@ -1,0 +1,81 @@
+/* Header.css */
+.app-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 16px 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #4A90E2;
+  /* Blue color for logo */
+  text-decoration: none;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.logo span {
+  color: #FF8C00;
+  /* Accent orange color */
+
+}
+
+/* Simple and clean 'Open a Door' nav link */
+.open-door-link {
+  color: #007bff;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-right: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.open-door-link:hover {
+  background-color: #e6f0ff;
+  color: #0056b3;
+}
+
+.signout-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 0;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Focus outline for accessibility */
+.signout-button:focus {
+  outline: 2px solid #4a90e2;
+  /* your theme's focus color */
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+
+@media screen and (max-width:540px) {
+  .logo {
+    font-size: 1.4rem;
+  }
+}
